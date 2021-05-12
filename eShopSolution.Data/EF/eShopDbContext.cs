@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.Data.EF
 {
-    public class eShopDbContext : DbContext // inheritance Microsoft.EntityFrameworkCore
+    public class EShopDbContext : DbContext // inheritance Microsoft.EntityFrameworkCore
     {
-        public eShopDbContext( DbContextOptions options) : base(options)
+        public EShopDbContext( DbContextOptions options) : base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,6 +27,7 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new ContactConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageConfiguration());
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
+            modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
             //base.OnModelCreating(modelBuilder);
         }
