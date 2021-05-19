@@ -1,7 +1,9 @@
-﻿using eShopSolution.Application.Catalog.Products.Dtos;
-using eShopSolution.Application.Catalog.Products.Dtos.Public;
-using eShopSolution.Application.Dtos;
+﻿
+using eShopSolution.Application.Common;
 using eShopSolution.Data.EF;
+using eShopSolution.ViewModels.Catalog.Products;
+using eShopSolution.ViewModels.Catalog.Products.Public;
+using eShopSolution.ViewModels.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,9 +16,11 @@ namespace eShopSolution.Application.Catalog.Products
     public class PublicProductService : IPublicProductService
     {
         private readonly EShopDbContext _context;
+        
         public PublicProductService(EShopDbContext context)
         {
             _context = context;
+            
         }
 
         
