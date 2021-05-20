@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.Utilities.Constants
 {
-    class SystemConstant
-    {
-        public class SystemConstants
+       public class SystemConstants
         {
             public const string MainConnectionString = "eShopSolutionDb";
         }
-    }
+    
 }
