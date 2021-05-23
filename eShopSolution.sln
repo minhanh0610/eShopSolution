@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.WepApp", "eShopSolution.WepApp\eShopSolution.WepApp.csproj", "{0936D056-C6CC-4193-B200-AA718C678609}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD40B470-37BE-4134-B4AA-152C5899856A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{CD40B470-37BE-4134-B4AA-152C5899856A}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
@@ -14,11 +14,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Data", "eShop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Application", "eShopSolution.Application\eShopSolution.Application.csproj", "{F450FDFA-26C8-4B26-94EC-1AD13D469517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Utilities", "eShopSolution.Utilities\eShopSolution.Utilities.csproj", "{3B91DEAA-1C3D-459C-9E71-9535DE80F9CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Utilities", "eShopSolution.Utilities\eShopSolution.Utilities.csproj", "{3B91DEAA-1C3D-459C-9E71-9535DE80F9CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.ViewModels", "eShopSolution.ViewModels\eShopSolution.ViewModels.csproj", "{3740173D-D184-48DC-8CA0-8F32CCDA9236}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.ViewModels", "eShopSolution.ViewModels\eShopSolution.ViewModels.csproj", "{3740173D-D184-48DC-8CA0-8F32CCDA9236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.BackendAPI", "eShopSolution.BackendAPI\eShopSolution.BackendAPI.csproj", "{63CDB393-F3E0-4BEC-A6C8-D4ABD51414E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.BackendAPI", "eShopSolution.BackendAPI\eShopSolution.BackendAPI.csproj", "{63CDB393-F3E0-4BEC-A6C8-D4ABD51414E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Infrastructure", "1. Infrastructure", "{2FA939F7-F057-4E28-BCC1-48E735B4780A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{0983EAB7-7523-46DB-8C20-E7317E3071E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Hosts", "3. Hosts", "{DC424DA9-E125-4188-AA4F-3DDEBD29BC94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +59,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0936D056-C6CC-4193-B200-AA718C678609} = {DC424DA9-E125-4188-AA4F-3DDEBD29BC94}
+		{68048DB3-30B6-43BB-A451-3357EC68C2C7} = {0983EAB7-7523-46DB-8C20-E7317E3071E8}
+		{F450FDFA-26C8-4B26-94EC-1AD13D469517} = {0983EAB7-7523-46DB-8C20-E7317E3071E8}
+		{3B91DEAA-1C3D-459C-9E71-9535DE80F9CF} = {2FA939F7-F057-4E28-BCC1-48E735B4780A}
+		{3740173D-D184-48DC-8CA0-8F32CCDA9236} = {2FA939F7-F057-4E28-BCC1-48E735B4780A}
+		{63CDB393-F3E0-4BEC-A6C8-D4ABD51414E5} = {DC424DA9-E125-4188-AA4F-3DDEBD29BC94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B349FF7-6BD3-499B-954C-B47093C918EC}
