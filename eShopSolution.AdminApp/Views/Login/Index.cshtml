@@ -1,5 +1,5 @@
 ﻿@using eShopSolution.ViewModels.System.User
-@model LoginRequest 
+@model LoginRequest
 @{
     Layout = null;
 }
@@ -27,18 +27,18 @@
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                 <div class="card-body">
-                                    <form asp-action="Login" asp-controller="User" method="post">
+                                    <form asp-action="Index" asp-controller="Login" method="post">
                                         <div class="form-floating mb-3">
                                             <input class="form-control" asp-for="UserName" type="text" placeholder="input username" />
-                                            <label >Account</label>
+                                            <label>Account</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" asp-for="Password"  type="password" placeholder="Password" />
-                                            <label >Password</label>
+                                            <input class="form-control" asp-for="Password" type="password" placeholder="Password" />
+                                            <label>Password</label>
                                         </div>
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" asp-for="RememberMe" type="checkbox" value="" />
-                                            <label class="form-check-label" >Remember Password</label>
+                                            <label class="form-check-label">Remember Password</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                             <a class="small" href="User/ForgotPassword">Forgot Password?</a>
@@ -47,8 +47,8 @@
                                     </form>
                                 </div>
                                 @*<div class="card-footer text-center py-3">
-                                    <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                </div>*@
+                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                    </div>*@
                             </div>
                         </div>
                     </div>

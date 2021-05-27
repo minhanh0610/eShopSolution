@@ -54,7 +54,7 @@ namespace eShopSolution.AdminApp.Services
 
             var json = JsonConvert.SerializeObject(registerRequest);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
-
+            
             var response = await client.PostAsync($"/api/users", httpContent);
             return response.IsSuccessStatusCode;
         }
