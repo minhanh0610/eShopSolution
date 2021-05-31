@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <None Remove="Views\User\Details.cshtml~RF4d93adb2.TMP" />
+    <None Remove="Views\User\RoleAssign.cshtml~RF51d0926c.TMP" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\eShopSolution.Utilities\eShopSolution.Utilities.csproj" />
     <ProjectReference Include="..\eShopSolution.ViewModels\eShopSolution.ViewModels.csproj" />
   </ItemGroup>
 
