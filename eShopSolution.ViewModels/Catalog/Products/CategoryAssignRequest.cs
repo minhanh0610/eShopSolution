@@ -7,12 +7,9 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.ViewModels.Catalog.Products
 {
-    public class GetManageProductPagingRequest : PagingRequestBase
+    public class CategoryAssignRequest
     {
-        public string Keyword { get; set; }
-
-        public int? CategoryId { get; set; }
-
-        public string LanguageId { get; set; }
+        public int Id { get; set; }
+        public List<SelectItem> Categories { get; set; } = new List<SelectItem>();
     }
 }
