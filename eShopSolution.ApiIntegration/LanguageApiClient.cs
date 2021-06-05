@@ -8,9 +8,9 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace eShopSolution.AdminApp.Services
+namespace eShopSolution.ApiIntegration
 {
-    public class LanguageApiClient : BaseApiClient,ILanguageApiClient
+    public class LanguageApiClient : BaseApiClient, ILanguageApiClient
     {
         public LanguageApiClient(IHttpClientFactory httpClientFactory,
                    IHttpContextAccessor httpContextAccessor,

@@ -26,7 +26,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Hosts", "3. Hosts", "{DC424DA9-E125-4188-AA4F-3DDEBD29BC94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{C81737F9-EAAC-4D48-8883-83F4DB8DE456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{C81737F9-EAAC-4D48-8883-83F4DB8DE456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.ApiIntegration", "eShopSolution.ApiIntegration\eShopSolution.ApiIntegration.csproj", "{C5942C7F-78FE-4A9D-B5CD-A874826A747D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{C81737F9-EAAC-4D48-8883-83F4DB8DE456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C81737F9-EAAC-4D48-8883-83F4DB8DE456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C81737F9-EAAC-4D48-8883-83F4DB8DE456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5942C7F-78FE-4A9D-B5CD-A874826A747D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5942C7F-78FE-4A9D-B5CD-A874826A747D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5942C7F-78FE-4A9D-B5CD-A874826A747D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5942C7F-78FE-4A9D-B5CD-A874826A747D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{3740173D-D184-48DC-8CA0-8F32CCDA9236} = {2FA939F7-F057-4E28-BCC1-48E735B4780A}
 		{63CDB393-F3E0-4BEC-A6C8-D4ABD51414E5} = {DC424DA9-E125-4188-AA4F-3DDEBD29BC94}
 		{C81737F9-EAAC-4D48-8883-83F4DB8DE456} = {DC424DA9-E125-4188-AA4F-3DDEBD29BC94}
+		{C5942C7F-78FE-4A9D-B5CD-A874826A747D} = {DC424DA9-E125-4188-AA4F-3DDEBD29BC94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B349FF7-6BD3-499B-954C-B47093C918EC}
