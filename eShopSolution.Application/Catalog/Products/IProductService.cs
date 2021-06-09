@@ -47,6 +47,8 @@ namespace eShopSolution.Application.Catalog.Products
 
         Task<List<ProductVm>> GetFeaturedProducts(string languageId, int take);
 
+        Task<List<ProductVm>> GetLatestProducts(string languageId, int take);
+
 
     }
 }

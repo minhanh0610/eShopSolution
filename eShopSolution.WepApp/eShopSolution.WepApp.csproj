@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Shared\_Layout.cshtml~RF86c935dc.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\lib\themes\less\oregional\" />
     <Folder Include="wwwroot\themes\less\oregional\" />
   </ItemGroup>
