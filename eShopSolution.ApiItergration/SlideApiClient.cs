@@ -1,27 +1,29 @@
-﻿using eShopSolution.ViewModels.Common;
-using eShopSolution.ViewModels.System.Languages;
+﻿using eShopSolution.ViewModels.Utilities.Slides;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace eShopSolution.AdminApp.Services
+namespace eShopSolution.ApiItergration
 {
-    public class LanguageApiClient : BaseApiClient,ILanguageApiClient
+    public class SlideApiClient : BaseApiClient, ISlideApiClient
     {
-        public LanguageApiClient(IHttpClientFactory httpClientFactory,
+        public SlideApiClient(IHttpClientFactory httpClientFactory,
                    IHttpContextAccessor httpContextAccessor,
                     IConfiguration configuration)
             : base(httpClientFactory, httpContextAccessor, configuration)
         {
         }
 
-        public async Task<ApiResult<List<LanguageVm>>> GetAll()
+        public async Task<List<SlideVm>> GetAll()
         {
-            return await GetAsync<ApiResult<List<LanguageVm>>>("/api/languages");
+            return await GetListAsync<SlideVm>("/api/slides");
         }
+
+        
     }
 }

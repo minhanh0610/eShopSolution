@@ -9,7 +9,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eShopSolution.AdminApp.Services
+namespace eShopSolution.ApiItergration
 {
     public class UserApiClient : IUserApiClient
     {
@@ -31,7 +31,7 @@ namespace eShopSolution.AdminApp.Services
 
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri("https://localhost:5001");
-           
+
             var response = await client.PostAsync("/api/users/authenticate", httpContent);
 
             if (response.IsSuccessStatusCode)
@@ -76,7 +76,7 @@ namespace eShopSolution.AdminApp.Services
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            client.DefaultRequestHeaders.Authorization = 
+            client.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.GetAsync($"/api/users/paging?pageIndex=" +
                 $"{request.PageIndex}&pageSize={request.PageSize}&keyword={request.Keyword}");
@@ -92,7 +92,7 @@ namespace eShopSolution.AdminApp.Services
 
             var json = JsonConvert.SerializeObject(registerRequest);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
-            
+
             var response = await client.PostAsync($"/api/users", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
