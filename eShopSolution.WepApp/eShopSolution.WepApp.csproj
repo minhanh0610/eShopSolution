@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Cart\Index.cshtml~RF8bb258f3.TMP" />
     <None Remove="Views\Shared\_Layout.cshtml~RF86c935dc.TMP" />
   </ItemGroup>
 
