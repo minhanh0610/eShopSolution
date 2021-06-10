@@ -25,5 +25,10 @@ namespace eShopSolution.ApiItergration
         {
             return await GetListAsync<CategoryVm>("/api/categories?languageId=" + languageId);
         }
+
+        public async Task<CategoryVm> GetById(string languageId, int id)
+        {
+            return await GetAsync<CategoryVm>($"/api/categories/{id}/{languageId}");
+        }
     }
 }
