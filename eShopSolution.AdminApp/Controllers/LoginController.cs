@@ -63,7 +63,7 @@ namespace eShopSolution.AdminApp.Controllers
                         userPrincipal,
                         authProperties);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "User");
         }
 
         private ClaimsPrincipal ValidateToken(string jwtToken)
